@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Project Mayhem | Login</title>
+  <title>pronet</title>
 
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,8 +20,9 @@
 .back {
   width: 100%;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  /* top: 0;
+  bottom: 0; */
+  padding-top: 100px;
 }
 
 .div-center {
@@ -49,7 +50,8 @@ div.content {
 
 </style>
 
-<body style="background-image: url('/bg.jpg');">
-<h1>Successful Login!</h1>
+<body style="background-image: url('./bg.jpg');">
+    @include('inc.nav')
+    @yield('content')
 </body>
 </html>

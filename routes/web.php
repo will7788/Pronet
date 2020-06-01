@@ -17,8 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/register', 'PagesController@register');
+Route::get('/profile', 'ProfileController@index')->name('profile');
 
-Route::get('/login', 'PagesController@login');
+Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
 
-Route::post('/logincontrol', 'LoginController@logincontrol');
+Route::patch('/profile', 'ProfileController@update')->name('profile.update');
+
+Route::patch('/portfolio', 'PortfolioController@update')->name('profile.update');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
