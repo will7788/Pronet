@@ -21,9 +21,13 @@ Route::get('/profile', 'ProfileController@index')->name('profile');
 
 Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
 
+Route::get('/group', 'GroupController@index')->name('group');
+
 Route::patch('/profile', 'ProfileController@update')->name('profile.update');
 
 Route::patch('/portfolio', 'PortfolioController@update')->name('profile.update');
+
+Route::patch('/group', 'GroupController@index')->name('group.update');
 
 Auth::routes();
 

@@ -48,4 +48,10 @@ class User extends Authenticatable
         return $this->hasOne(Portfolio::class);
 
     }
+
+    public function group(){
+
+        return $this->hasOne(Group::class);
+
+    }
 }
