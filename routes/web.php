@@ -23,6 +23,8 @@ Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
 
 Route::get('/group', 'GroupController@index')->name('group');
 
+Route::get('/jobs', 'JobsController@index')->name('jobs');
+
 Route::patch('/profile', 'ProfileController@update')->name('profile.update');
 
 Route::patch('/portfolio', 'PortfolioController@update')->name('profile.update');

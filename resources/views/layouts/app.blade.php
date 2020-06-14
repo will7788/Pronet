@@ -40,6 +40,9 @@
                       <li class="nav-item">
                         <a class="nav-link" href="{{ url('/group') }}">Groups</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/jobs') }}">Jobs</a>
+                      </li>
                     </ul>
                   </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
