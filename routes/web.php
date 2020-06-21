@@ -35,3 +35,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/users', function () {
+    return view('userdata');
+});
+
+Route::get('/groups', function () {
+    return view('groupdata');
+});
