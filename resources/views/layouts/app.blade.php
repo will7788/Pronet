@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- //William Thornton, Sam Krall, 06/28/2020 -->
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
